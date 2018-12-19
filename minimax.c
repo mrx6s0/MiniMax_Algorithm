@@ -23,13 +23,23 @@ int main()
       max = x;
       min = y;
 
-      if( x >= max) x = x+1;; /* se x for igual ou maior que o máximo, incrementa */ 
-      if (y <= min) y = y-1;  // if (x  < min) min = x--;
-
+      if( x >= max)
+      
+      x = x+1; /* se x for igual ou maior que o máximo, incrementa */ 
+      
+      if(y <= min)
+      
+      y = y-1;
+      else { 
+          
+        printf("error...");  
+        
+        return -1;
+  
     }
 
   }
-
+}
 
 
   printf("max = %d, min = %d\n", max, min);
