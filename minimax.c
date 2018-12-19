@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,7 +14,7 @@ int main()
 
     scanf("%d %d", &x,&y);
 
-    if (i == -1) /*  lendo o primeiro da sequencia */
+    if (i == 0) /*  lendo o primeiro da sequencia */
       continue;
 
     else
@@ -22,8 +23,8 @@ int main()
       max = x;
       min = y;
 
-      if( x >= max) x++; /* se x for igual ou maior que o máximo, incrementa */ 
-      if (y <= min) y--;  // if (x  < min) min = x--;
+      if( x >= max) x = x+1;; /* se x for igual ou maior que o máximo, incrementa */ 
+      if (y <= min) y = y-1;  // if (x  < min) min = x--;
 
     }
 
