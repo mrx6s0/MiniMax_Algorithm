@@ -1,11 +1,14 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
+
 {
+
   int n, x, i, y;
   int max, min;
+  
+  
   scanf("%d", &n);
 
   for (i = 0; i < n; i++)
@@ -20,12 +23,12 @@ int main()
     else
 
     {
-      max = x;
-      min = y;
+       max = x;
+       min = y;
 
       if( x >= max)
       
-      x = x+1; /* se x for igual ou maior que o máximo, incrementa */ 
+      x = x++; /* se x for igual ou maior que o máximo, incrementa */ 
       
       if(y <= min)
       
