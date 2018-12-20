@@ -18,7 +18,7 @@ int main()
     scanf("%d %d", &x,&y);
 
     if (i == 0) /*  lendo o primeiro da sequencia */
-      continue;
+       max = x, min = y;
 
     else
 
@@ -28,7 +28,7 @@ int main()
 
       if( x >= max)
       
-      x = x++; /* se x for igual ou maior que o máximo, incrementa */ 
+      x = x+1; /* se x for igual ou maior que o máximo, incrementa */ 
       
       if(y <= min)
       
@@ -48,4 +48,5 @@ int main()
   printf("max = %d, min = %d\n", max, min);
 
   return 0;
-  }
+
+}
