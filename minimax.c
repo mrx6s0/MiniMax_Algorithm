@@ -9,7 +9,7 @@ int main()
   int max, min;
   
   
-  scanf("%d", &n);
+  scanf("%d %d", &n,&i);
 
   for (i = 0; i < n; i++)
 
