@@ -9,7 +9,7 @@ int main()
   int max, min;
   
   
-  scanf("%d %d", &n,&i);
+  scanf("%d %d", &n);
 
   for (i = 0; i < n; i++)
 
@@ -27,16 +27,21 @@ int main()
 
     {
 
-      if( x >= max) 
+      //if( x >= max) 
         
-        max = x+1;
+        //max = x+1;
       
      // x = x+1; /* se x for igual ou maior que o máximo, incrementa */ 
       
-      if(y <= min) 
+      //if(y <= min) 
         
-        min = y-1;
+        //min = y-1;
       
+       if(x >= min)
+       min = x-min;
+       if(y <= max)
+       x = max;
+       
      // y = y-1;
       else { 
           
