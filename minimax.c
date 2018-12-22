@@ -8,13 +8,17 @@ int main()
   int n, x, i, y;
   int max, min;
   
-  
+  for (i = 0; i < n; i++)
+  printf("Matriz A (nxn): ");
   scanf("%d %d", &n);
 
-  for (i = 0; i < n; i++)
+  
 
   {
 
+    scanf("%d %d", &x,&y); 
+    scanf("%d %d", &x,&y);
+    scanf("%d %d", &x,&y);
     scanf("%d %d", &x,&y);
 
     if (i == 0) /*  lendo o primeiro da sequencia */
@@ -26,6 +30,10 @@ int main()
     else
 
     {
+        
+        for(x=0;x<y;x++)
+        
+        for(y=0;y>x;y++)
 
       //if( x >= max) 
         
@@ -37,10 +45,8 @@ int main()
         
         //min = y-1;
       
-       if(x >= min)
-       min = x-min;
-       if(y <= max)
-       x = max;
+       if(x >= min)  max = x-min;
+       if(x <= min)  min = y;
        
      // y = y-1;
       else { 
@@ -55,7 +61,7 @@ int main()
 }
 
 
-  printf("max = %d, min = %d\n", max, min);
-
+  printf("max = %d, min = %d\n,, %d", max, min, y);
+  
   return 0;
 }
